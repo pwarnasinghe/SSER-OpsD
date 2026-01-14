@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Aptos';
+  src: local('Aptos'), local('Aptos');
+  font-display: swap;
+}
+
+:root {
+  --brand: #005A9C;
+  --btn: #0078D4;
+  --panel: rgba(255,255,255,0.8);
+  --card: rgba(244,244,244,0.95);
+  --emc: rgba(214,234,248,0.95);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Aptos', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 11pt;
+  margin: 0;
+  padding: 20px;
+  background-image: url('../image/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000;
+}
+
+h2 {
+  color: var(--brand);
+  background-color: var(--panel);
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 0 0 16px 0;
+}
+
+p, strong, button, div, .site-details {
+  font-family: inherit;
+}
+
+p {
+  background-color: var(--panel);
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.site-box {
+  background: var(--card);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  width: 280px;
+  cursor: pointer;
+}
+
+.site-details {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.contact-btn {
+  background: var(--btn);
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.contact-btn:focus { outline: 2px solid #003e6a; }
+
+.divider {
+  margin-top: 40px;
+  border-top: 2px solid var(--brand);
+  padding-top: 20px;
+}
+
+.emc-container {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.emc-box {
+  background: var(--emc);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  width: 320px;
+  cursor: pointer;
+}
+
+/* small accessibility tweak: only buttons are clickable, not the hidden panels */
+.site-details button { cursor: pointer; }

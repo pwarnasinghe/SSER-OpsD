@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onshore Ops Planning Directory</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <h2>Onshore Ops Planning Directory</h2>
+  <p>Click on a site name to view details. Use the "Contact Site" button to send an email.</p>
+
+  <div class="container">
+    <!-- Achany -->
+    <div class="site-box" onclick="toggleDetails('site_0')">
+      <strong>Achany</strong>
+      <div id="site_0" class="site-details">
+        <p><strong>Site Rating:</strong> 38.0 MW</p>
+        <p><strong>TEC:</strong> N/A</p>
+        <p><strong>Connection Type:</strong> SSEN-D <br> <strong>Email:</strong> DISTRIBUTIONOUTAGES@sse.com</p>
+        <p><strong>Site Supervisor:</strong> Scott Johnstone (07467 393275)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,WilliamScott.Johnson@sse.com,william.caithness@sse.com',
+          '[Wk --] - SSEN-D Outages impacting Achany WF',
+          `Hi Scott/Willie, 
+
+Please review the outage request above. The site will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Artfield and Balmurrie Fell -->
+    <div class="site-box" onclick="toggleDetails('site_1')">
+      <strong>Artfield and Balmurrie Fell</strong>
+      <div id="site_1" class="site-details">
+        <p><strong>Site Rating:</strong> 28.6 MW</p>
+        <p><strong>TEC:</strong> N/A</p>
+        <p><strong>Connection Type:</strong> SPEN (OCC) <br> <strong>Email:</strong> ps.nmcndaysupport@ScottishPower.com</p>
+        <p><strong>Site Supervisor:</strong> Darren Munro (07767851874)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,Darren.munro@sse.com,steven.smillie@sse.com',
+          '[Wk --] - SPEN (OCC) Outages impacting Artfield and Balmurrie Fell WF',
+          `Hi Darren/Steven,
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Bhlaraidh -->
+    <div class="site-box" onclick="toggleDetails('site_2')">
+      <strong>Bhlaraidh</strong>
+      <div id="site_2" class="site-details">
+        <p><strong>Site Rating:</strong> 110.4 MW</p>
+        <p><strong>TEC:</strong> 108.0</p>
+        <p><strong>Connection Type:</strong> SSEN-T <br> <strong>Email:</strong> currentyear.transmission.outages@sse.com</p>
+        <p><strong>Site Supervisor:</strong> Graham Robertson (07827038874)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,graham.robertson@sse.com,william.caithness@sse.com',
+          'Confidential – Outages in Draft - [Wk --] - SSEN-T Outages impacting Bhlaraidh WF',
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------\n\n' +
+          'Hi Graham/Willie,\n\n' +
+          'Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk/de-energised for the duration/switching-time of the outage. ' +
+          'I have no concerns about accepting this—do you have any objections or concerns?\n\n' +
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------'
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Cathkin Braes -->
+    <div class="site-box" onclick="toggleDetails('site_3')">
+      <strong>Cathkin Braes</strong>
+      <div id="site_3" class="site-details">
+        <p><strong>Site Rating:</strong> 3.0 MW</p>
+        <p><strong>TEC:</strong> N/A</p>
+        <p><strong>Connection Type:</strong> SPEN (OCC) <br> <strong>Email:</strong> ps.nmcndaysupport@ScottishPower.com</p>
+        <p><strong>Site Supervisor:</strong> Darren Munro (07767851874)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,Darren.munro@sse.com,steven.smillie@sse.com',
+          '[Wk --] - SPEN (OCC) Outages impacting Cathkin Braes WF',
+          `Hi Darren/Steven, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Clyde North -->
+    <div class="site-box" onclick="toggleDetails('site_4')">
+      <strong>Clyde North</strong>
+      <div id="site_4" class="site-details">
+        <p><strong>Site Rating:</strong> 188.1 MW</p>
+        <p><strong>TEC:</strong> 188.1</p>
+        <p><strong>Connection Type:</strong> SPT <br> <strong>Email:</strong> TransmissionPlanners@sppowersystems.com</p>
+        <p><strong>Site Supervisor:</strong><br> 
+          Mark McCourt (07469411613) <br>
+          Mark Kennedy (07389755593) <br>
+          Neil Easton (07741357621) <br>
+          Anthony Doherty (07880180611) <br>
+        </p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,Mark.McCourt@sse.com,Mark.Kennedy@sse.com,neil.easton@sse.com,anthony.doherty@sse.com,clyde.ops@sse.com,graham.alexander3@sse.com',
+          'Confidential – Outages in Draft - [Wk --] - SPT Outages impacting Clyde North WF',
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------\n\n' +
+          'Hi Mark, Neil, Anthony, Graham, Clyde Ops,\n\n' +
+          'Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk/de-energised for the duration/switching-time of the outage. ' +
+          'I have no concerns about accepting this—do you have any objections or concerns?\n\n' +
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------'
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Clyde Central -->
+    <div class="site-box" onclick="toggleDetails('site_5')">
+      <strong>Clyde Central</strong>
+      <div id="site_5" class="site-details">
+        <p><strong>Site Rating:</strong> 186.4 MW</p>
+        <p><strong>TEC:</strong> 186.4</p>
+        <p><strong>Connection Type:</strong> SPT <br> <strong>Email:</strong> TransmissionPlanners@sppowersystems.com</p>
+        <p><strong>Site Supervisor:</strong><br>
+          Mark McCourt (07469411613) <br>
+          Mark Kennedy (07389755593) <br>
+          Neil Easton (07741357621) <br>
+          Anthony Doherty (07880180611) <br>
+        </p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,Mark.McCourt@sse.com,Mark.Kennedy@sse.com,neil.easton@sse.com,anthony.doherty@sse.com,clyde.ops@sse.com,graham.alexander3@sse.com',
+          'Confidential – Outages in Draft - [Wk --] - SPT Outages impacting Clyde Central WF',
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------\n\n' +
+          'Hi Mark, Neil, Anthony, Graham, Clyde Ops,\n\n' +
+          'Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk/de-energised for the duration/switching-time of the outage. ' +
+          'I have no concerns about accepting this—do you have any objections or concerns?\n\n' +
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------'
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Clyde South -->
+    <div class="site-box" onclick="toggleDetails('site_6')">
+      <strong>Clyde South</strong>
+      <div id="site_6" class="site-details">
+        <p><strong>Site Rating:</strong> 128.8 MW</p>
+        <p><strong>TEC:</strong> 128.8</p>
+        <p><strong>Connection Type:</strong> SPT <br> <strong>Email:</strong> TransmissionPlanners@sppowersystems.com</p>
+        <p><strong>Site Supervisor:</strong><br>
+          Mark McCourt (07469411613) <br>
+          Mark Kennedy (07389755593) <br>
+          Neil Easton (07741357621) <br>
+          Anthony Doherty (07880180611) <br>
+        </p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,Mark.McCourt@sse.com,Mark.Kennedy@sse.com,neil.easton@sse.com,anthony.doherty@sse.com,clyde.ops@sse.com,graham.alexander3@sse.com',
+          'Confidential – Outages in Draft - [Wk --] - SPT Outages impacting Clyde South WF',
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------\n\n' +
+          'Hi Mark, Neil, Anthony, Graham, Clyde Ops,\n\n' +
+          'Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk/de-energised for the duration/switching-time of the outage. ' +
+          'I have no concerns about accepting this—do you have any objections or concerns?\n\n' +
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------'
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Drumderg -->
+    <div class="site-box" onclick="toggleDetails('site_7')">
+      <strong>Drumderg</strong>
+      <div id="site_7" class="site-details">
+        <p><strong>Site Rating:</strong> 36.8 MW</p>
+        <p><strong>TEC:</strong> N/A</p>
+        <p><strong>Connection Type:</strong> SSEN-D <br> <strong>Email:</strong> DISTRIBUTIONOUTAGES@sse.com</p>
+        <p><strong>Site Supervisor:</strong> Timothy Elliott (07827044806)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,timothy.elliott@sse.com,steven.smillie@sse.com',
+          '[Wk --] - SSEN-D Outages impacting Drumderg WF',
+          `Hi Timothy/Steven, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Dunmaglass -->
+    <div class="site-box" onclick="toggleDetails('site_8')">
+      <strong>Dunmaglass</strong>
+      <div id="site_8" class="site-details">
+        <p><strong>Site Rating:</strong> 94.05 MW</p>
+        <p><strong>TEC:</strong> 94.0</p>
+        <p><strong>Connection Type:</strong> SSEN-T <br> <strong>Email:</strong> currentyear.transmission.outages@sse.com</p>
+        <p><strong>Site Supervisor:</strong> Brian MacLeod (07901132435)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,Brian.MacLeod@sse.com,william.caithness@sse.com',
+          '[Wk --] - SSEN-D Outages impacting Dunmaglass WF',
+          `Hi Brian, Willie, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Fairburn -->
+    <div class="site-box" onclick="toggleDetails('site_9')">
+      <strong>Fairburn</strong>
+      <div id="site_9" class="site-details">
+        <p><strong>Site Rating:</strong> 40.0 MW</p>
+        <p><strong>TEC:</strong> N/A</p>
+        <p><strong>Connection Type:</strong> SSEN-D <br> <strong>Email:</strong> DISTRIBUTIONOUTAGES@sse.com</p>
+        <p><strong>Site Supervisor:</strong> Graham Robertson (07827038874)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,graham.robertson@sse.com,william.caithness@sse.com',
+          '[Wk --] - SSEN-D/T Outages impacting Fairburn WF',
+          `Hi Graham, Willie, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Gordonbush -->
+    <div class="site-box" onclick="toggleDetails('site_10')">
+      <strong>Gordonbush</strong>
+      <div id="site_10" class="site-details">
+        <p><strong>Site Rating:</strong> 70.0 MW</p>
+        <p><strong>TEC:</strong> 70.0</p>
+        <p><strong>Connection Type:</strong> SSEN-T <br> <strong>Email:</strong> currentyear.transmission.outages@sse.com</p>
+        <p><strong>Site Supervisor:</strong> David Turney (07584313255)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,david.turney@sse.com,william.caithness@sse.com',
+          '[Wk --] - SSEN-T Outages impacting Gordonbush WF',
+          `Hi David, Willie, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Gordonbush Extension -->
+    <div class="site-box" onclick="toggleDetails('site_11')">
+      <strong>Gordonbush Extension</strong>
+      <div id="site_11" class="site-details">
+        <p><strong>Site Rating:</strong> 38.0 MW</p>
+        <p><strong>TEC:</strong> 38.0</p>
+        <p><strong>Connection Type:</strong> SSEN-T <br> <strong>Email:</strong> currentyear.transmission.outages@sse.com</p>
+        <p><strong>Site Supervisor:</strong> David Turney (07584313255)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,david.turney@sse.com,william.caithness@sse.com',
+          '[Wk --] - SSEN-T Outages impacting Gordonbush Extension WF',
+          `Hi David, Willie, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Griffin & Calliachar -->
+    <div class="site-box" onclick="toggleDetails('site_12')">
+      <strong>Griffin & Calliachar</strong>
+      <div id="site_12" class="site-details">
+        <p><strong>Site Rating:</strong> 188.6 MW</p>
+        <p><strong>TEC:</strong> 188.6</p>
+        <p><strong>Connection Type:</strong> SSEN-T <br> <strong>Email:</strong> currentyear.transmission.outages@sse.com</p>
+        <p><strong>Site Supervisor:</strong><br>
+          David Fraser (07825015065) <br>
+          Timothy Elliott (07827044806) <br>
+        </p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,david.fraser@sse.com,timothy.elliott@sse.com,steven.smillie@sse.com',
+          '[Wk --] - SSEN-T Outages impacting Griffin & Calliachar WF',
+          `Hi David, Tim, Steven, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Hadyard Hill -->
+    <div class="site-box" onclick="toggleDetails('site_13')">
+      <strong>Hadyard Hill</strong>
+      <div id="site_13" class="site-details">
+        <p><strong>Site Rating:</strong> 117.3 MW</p>
+        <p><strong>TEC:</strong> 99.9</p>
+        <p><strong>Connection Type:</strong> SPT <br> <strong>Email:</strong> TransmissionPlanners@sppowersystems.com</p>
+        <p><strong>Site Supervisor:</strong><br>
+          Darren Munro (07767851874) <br>
+          Colin McCrindle (07990 424583) <br>
+        </p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,darren.munro@sse.com,colin.mccrindle@sse.com,steven.smillie@sse.com',
+          '[Wk --] - SPT Outages impacting Hadyard Hill WF',
+          `Hi Darren, Colin, Steven, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Keadby -->
+    <div class="site-box" onclick="toggleDetails('site_14')">
+      <strong>Keadby</strong>
+      <div id="site_14" class="site-details">
+        <p><strong>Site Rating:</strong> 68.0 MW</p>
+        <p><strong>TEC:</strong> N/A</p>
+        <p><strong>Connection Type:</strong> NPG <br> <strong>Email:</strong> EHVplanning.Yorkshire@northernpowergrid.com</p>
+        <p><strong>Site Supervisor:</strong> Eddie Duff (07741355019)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,Edward.Duff@sse.com,steven.smillie@sse.com',
+          '[Wk --] - NPG Outages impacting Keadby',
+          `Hi Edward, Steven, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Salisbury BESS -->
+    <div class="site-box" onclick="toggleDetails('site_21')">
+      <strong>Salisbury BESS</strong>
+      <div id="site_21" class="site-details">
+        <p><strong>Site Rating:</strong> 49.5 MW</p>
+        <p><strong>TEC:</strong> N/A</p>
+        <p><strong>Connection Type:</strong> SSEN-D South <br> <strong>Email:</strong> operational.planning@sse.com</p>
+        <p><strong>Site Supervisor:</strong><br>
+          Ioannis Tsokos (07881022563) <br>
+          Wind Desk Alerts <br>
+        </p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,ioannis.tsokos@sse.com,wind.desk.alerts@sse.com,alvaro.ribeiro@sse.com',
+          '[Wk --] - SSEN-D South Outages impacting Salisbury BESS',
+          `Hi Ioannis, Alvaro,
+                    
+Please review the outage request above. The site will be at de-energised for the duration/import will be restricted but no restriction on export. 
+I have no concerns about accepting this—do you have any objections or concerns?`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Spurness -->
+    <div class="site-box" onclick="toggleDetails('site_15')">
+      <strong>Spurness</strong>
+      <div id="site_15" class="site-details">
+        <p><strong>Site Rating:</strong> 10.0 MW</p>
+        <p><strong>TEC:</strong> N/A</p>
+        <p><strong>Connection Type:</strong> SSEN-D <br> <strong>Email:</strong> DISTRIBUTIONOUTAGES@sse.com</p>
+        <p><strong>Site Supervisor:</strong> Colin McKay (07876836857)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,colin.mckay@sse.com,william.caithness@sse.com',
+          '[Wk --] - SSEN-T Outages impacting Spurness WF',
+          `Hi Colin, Willie, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Strathy North -->
+    <div class="site-box" onclick="toggleDetails('site_16')">
+      <strong>Strathy North</strong>
+      <div id="site_16" class="site-details">
+        <p><strong>Site Rating:</strong> 67.65 MW</p>
+        <p><strong>TEC:</strong> 67.65</p>
+        <p><strong>Connection Type:</strong> SSEN-T <br> <strong>Email:</strong> currentyear.transmission.outages@sse.com</p>
+        <p><strong>Site Supervisor:</strong> Scott Johnstone (07467 393275)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,WilliamScott.Johnson@sse.com,william.caithness@sse.com',
+          '[Wk --] - SSEN-T Outages impacting Strathy North WF',
+          `Hi Scott, Willie, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Stronelairg -->
+    <div class="site-box" onclick="toggleDetails('site_17')">
+      <strong>Stronelairg</strong>
+      <div id="site_17" class="site-details">
+        <p><strong>Site Rating:</strong> 227.7 MW</p>
+        <p><strong>TEC:</strong> 227.8</p>
+        <p><strong>Connection Type:</strong> SSEN-T <br> <strong>Email:</strong> currentyear.transmission.outages@sse.com</p>
+        <p><strong>Site Supervisor:</strong> Michael Park (07467393864)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,michael.park@sse.com,william.caithness@sse.com',
+          'Confidential – Outages in Draft - [Wk --] - SSEN-T Outages impacting Stronelairg WF',
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------\n\n' +
+          'Hi Michael,\n\n' +
+          'Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk/de-energised for the duration/switching-time of the outage. ' +
+          'I have no concerns about accepting this—do you have any objections or concerns?\n\n' +
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------'
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Tangy 1 -->
+    <div class="site-box" onclick="toggleDetails('site_18')">
+      <strong>Tangy 1</strong>
+      <div id="site_18" class="site-details">
+        <p><strong>Site Rating:</strong> 12.75 MW</p>
+        <p><strong>TEC:</strong> N/A</p>
+        <p><strong>Connection Type:</strong> SSEN-D <br> <strong>Email:</strong> DISTRIBUTIONOUTAGES@sse.com</p>
+        <p><strong>Site Supervisor:</strong> Darren Munro (07767851874)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,darren.munro@sse.com,steven.smillie@sse.com',
+          '[Wk --] - SSEN-D Outages impacting Tangy 1',
+          `Hi Craig, Steven,
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Tangy 2 -->
+    <div class="site-box" onclick="toggleDetails('site_19')">
+      <strong>Tangy 2</strong>
+      <div id="site_19" class="site-details">
+        <p><strong>Site Rating:</strong> 5.95 MW</p>
+        <p><strong>TEC:</strong> N/A</p>
+        <p><strong>Connection Type:</strong> SSEN-D <br> <strong>Email:</strong> DISTRIBUTIONOUTAGES@sse.com</p>
+        <p><strong>Site Supervisor:</strong> Darren Munro (07767851874)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,darren.munro@sse.com,steven.smillie@sse.com',
+          '[Wk --] - SSEN-D Outages impacting Tangy 2',
+          `Hi Craig, Steven,
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Toddleburn -->
+    <div class="site-box" onclick="toggleDetails('site_20')">
+      <strong>Toddleburn</strong>
+      <div id="site_20" class="site-details">
+        <p><strong>Site Rating:</strong> 27.6 MW</p>
+        <p><strong>TEC:</strong> 27.6</p>
+        <p><strong>Connection Type:</strong> SPT <br> <strong>Email:</strong> TransmissionPlanners@sppowersystems.com</p>
+        <p><strong>Site Supervisor:</strong> Eddie Duff (07741355019)</p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,Edward.Duff@sse.com,steven.smillie@sse.com',
+          '[Wk --] - SPT Outages impacting Toddleburn',
+          `Hi Eddie, Steven, 
+
+Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk or de-energised for the duration/switching time of the outage. 
+At this stage, I have no concerns about accepting this request. However, please let me know if you have any objections or concerns.`
+        )">Contact Site</button>
+      </div>
+    </div>
+
+    <!-- Viking -->
+    <div class="site-box" onclick="toggleDetails('site_22')">
+      <strong>Viking</strong>
+      <div id="site_22" class="site-details">
+        <p><strong>Site Rating:</strong> 443.0 MW</p>
+        <p><strong>TEC:</strong> 443.0</p>
+        <p><strong>Connection Type:</strong> SSEN-T <br> <strong>Email:</strong> currentyear.transmission.outages@sse.com</p>
+        <p><strong>Site Supervisor:</strong><br>
+          Calum MacColl (07425426884) <br>
+          Callum Nicolson (07990495621) <br>
+          Gavin Anderson (07389755391) <br>
+          Matthew Chattell (07827047623) <br>
+        </p>
+        <button class="contact-btn" onclick="sendEmail(
+          'onshore.ops.planning@sse.com,calum.maccoll@sse.com,callum.nicolson@sse.com,gavin.anderson2@sse.com,matthew.chattell@sse.com,haydn.jamieson@sse.com',
+          'Confidential – Outages in Draft - [Wk --] - SSEN-T Outages impacting Viking WF Connection Point',
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------\n\n' +
+          'Hi Calum, Callum, Gavin, Haydn,\n\n' +
+          'Please review the outage request above. The site/BMU1/BMU2/BMU3/BMU4 will be at a single circuit risk/de-energised for the duration/switching-time of the outage. ' +
+          'I have no concerns about accepting this—do you have any objections or concerns?\n\n' +
+          '------------------------------\n' +
+          '🚨 CONFIDENTIAL – OUTAGE IN DRAFT AND SUBJECT TO REMIT DISCLOSURE 🚨\n' +
+          'This communication has been sent to a specific (restricted) distribution list and must not be forwarded or shared without the permission of the sender.\n' +
+          '------------------------------'
+        )">Contact Site</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENERGY MANAGEMENT CENTRE SECTION -->
+  <div class="divider">
+    <h2>Energy Management Centre</h2>
+
+    <div class="emc-container">
+      <!-- Salisbury BESS - Electrical Team Outages -->
+      <div class="emc-box" onclick="toggleDetails('emc_0')">
+        <strong>Salisbury BESS - Electrical Team Outages</strong>
+        <div id="emc_0" class="site-details">
+          <p><strong>Email:</strong> energy.management.centre@sse.com, giovanni.cupelli@sse.com, tony.parsons@sse.com, david.blain@sse.com, planning.and.risk@sse.com, richard.mcdonald@sse.com</p>
+          <button class="contact-btn" onclick="sendEmail(
+            'energy.management.centre@sse.com,batterydesk@sse.com,giovanni.cupelli@sse.com,tony.parsons@sse.com,david.blain@sse.com,Euan.Colston@sse.com,Maria.Marinari@sse.com,planning.and.risk@sse.com,richard.mcdonald@sse.com',
+            'Salisbury BESS - Electrical Team Outages',
+            `Hi Richard, Giovanni, Tony, David, Euan, Maria,
+
+Good morning/afternoon.
+
+The Electrical Team is planning outages on the circuits listed below. As these do not meet the PAM entry threshold (>10MW), they will not be recorded in PAM.
+
+Please let me know if you require any further information.`
+          )">Contact EMC</button>
+        </div>
+      </div>
+
+      <!-- Salisbury BESS - Distribution Network Outages -->
+      <div class="emc-box" onclick="toggleDetails('emc_1')">
+        <strong>Salisbury BESS - Distribution Network Outages</strong>
+        <div id="emc_1" class="site-details">
+          <p><strong>Email:</strong> energy.management.centre@sse.com, giovanni.cupelli@sse.com, tony.parsons@sse.com, david.blain@sse.com, planning.and.risk@sse.com, richard.mcdonald@sse.com</p>
+          <button class="contact-btn" onclick="sendEmail(
+            'energy.management.centre@sse.com,batterydesk@sse.com,giovanni.cupelli@sse.com,tony.parsons@sse.com,david.blain@sse.com,Euan.Colston@sse.com,Maria.Marinari@sse.com,planning.and.risk@sse.com,richard.mcdonald@sse.com',
+            'Salisbury BESS - Distribution Network Outages',
+            `Hi Richard, Giovanni, Tony, David, Euan, Maria,
+Good morning/afternoon,
+
+Please note that distribution network outages are in the plan impacting Salisbury BESS. The site will be disconnected/require export to be constrained to --MW, and/or there will be no constraint on export, but the import will be constrained to --KVA/MVA.`
+          )">Contact EMC</button>
+        </div>
+      </div>
+
+      <!-- Planning and Risk - PAM Outage Updates -->
+      <div class="emc-box" onclick="toggleDetails('emc_2')">
+        <strong>Planning and Risk - PAM Outage Updates</strong>
+        <div id="emc_2" class="site-details">
+          <p><strong>Email:</strong> planning.and.risk@sse.com, richard.mcdonald@sse.com</p>
+          <button class="contact-btn" onclick="sendEmail(
+            'planning.and.risk@sse.com,richard.mcdonald@sse.com',
+            'Updated Outages in PAM Requiring Acceptance',
+            `Good morning/afternoon,
+
+There are updated outages in Plant Availability Manager that require acceptance.
+
+Could you update me once these have been accepted?`
+          )">Contact Planning and Risk</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
