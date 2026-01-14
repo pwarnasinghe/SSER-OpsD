@@ -99,4 +99,5 @@ Static HTML/CSS/JS site for the SSE Onshore Ops Planning Directory.
 ## Deploy
 Connected to Azure Static Web Apps: resource 'sse-ops-planning-directory' in resource group 'Onshore-OPS-Planning'.
 Every push to `main` redeploys automatically.
+This is the folder location " C:\Users\PW91639\onshore-ops-planning-directory>"
 
